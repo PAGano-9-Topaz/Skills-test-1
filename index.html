@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2</title>
+    <!-- PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <h1>Order food</h1>
+    <h3>Menu</h3>
+    <br>
+    <form> 
+        <label for="check1">Beef Kaldereta</label><input type="checkbox" id="check1" value="180"><br>
+        <label for="check2">Ice tea</label><input type="checkbox" id="check2" value="30"><br>
+        <label for="check3">Pork Sisig</label><input type="checkbox" id="check3" value="200"><br>
+        <label for="check4">Plain rice</label><input type="checkbox" id="check4" value="20"><br>
+        <label for="check5">Bicol express</label><input type="checkbox" id="check5" value="160">
+    </form>
+    <br>
+    <h3>Customer Details</h3>
+    <form>
+        <input type="text" id="input1" placeholder="Enter Name"> <br>
+        <input type="text" id="input2" placeholder="Enter Contact Number"> <br>
+        <input type="text" id="input3" placeholder="Enter Address"> <br>
+        <input type="button" value="Generate Order" py-click="sample_function">
+    </form>
+    <div id="output"></div>    
+    <py-script src="main.py"></py-script>
+</body>
+</html>
